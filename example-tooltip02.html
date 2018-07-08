@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tooltip method 2: Additional information before the label and form control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Tooltip method 2: Additional information before the label and form control</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+    <p>If the additional information is informative, but not critical, it could be presented to users as a separate element, before the relevant form control and label.</p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container hint-parent">
+        <div class="hint hint-positioned">
+          <button class="tooltip">
+            <span class="hidden">For the following input, the number</span>
+            <span class="tooltip__content">
+              Must be a whole number with no fractions, no decimal parts and no negatives.
+            </span>
+          </button>
+        </div>
+        <label for="hint6">
+          <span class="label-content">
+            Choose a number
+          </span>
+          <input class="form-input" id="hint6" type="text">
+        </label>
+      </div>
+    </form>
+
+    <h2>Markup</h2>
+    <figure>
+<pre><code class="language-html">&lt;div class="form-container hint-parent"&gt;
+  &lt;div class="hint hint-positioned"&gt;
+    &lt;button class="tooltip"&gt;
+      &lt;span class="hidden"&gt;For the following input, the number&lt;/span&gt;
+      &lt;span class="tooltip__content"&gt;
+        Must be a whole number with no fractions, no decimal parts and no negatives.
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;label for="hint6"&gt;
+    &lt;span class="label-content"&gt;
+      Choose a number
+    &lt;/span&gt;
+    &lt;input class="form-input" id="hint6" type="text"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

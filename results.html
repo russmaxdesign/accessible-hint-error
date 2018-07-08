@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Accessible error messages and hints: Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/tooltip.css">
+</head>
+<body>
+  <main class="main-wide">
+    <h1>Accessible error messages and hints: Results</h1>
+    <h2>VoiceOver - OSX</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="width16">Browser</th>
+          <th class="width28">Chrome</th>
+          <th class="width28">Safari</th>
+          <th class="width28">Opera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Error Method 1:</th>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 2:</th>
+          <td>
+            <p class="transcript">Phone number. Edit text. [Pause] Error: Must be a valid phone number. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit text. [Pause] Error: Must be a valid phone number. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit text. [Pause] Error: Must be a valid phone number. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 3:</th>
+          <td>
+            <p class="transcript">Mobile number. Invalid data. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Invalid data. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Invalid data. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 1:</th>
+          <td>
+            <p class="transcript">Add your email address. Email. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+          <td>
+            <p class="transcript">Add your email address. Email. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+          <td>
+            <p class="transcript">Add your email address. Email. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 2:</th>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 3:</th>
+          <td>
+            <p class="transcript">Address. Edit text. [Pause] Use your full street address. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit text. [Pause] Use your full street address. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit text. [Pause] Use your full street address. You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 1:</th>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button. [Pause] You are currently on a button. To click this button press Control-Option-Space</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p>Not announced by default when tabbing through page</p>
+            <span class="results na">NA</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button. [Pause] You are currently on a button. To click this button press Control-Option-Space</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 2:</th>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit text. [Pause] You are currently on a text field. To enter text in this field, type.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>NVDA - Windows</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="width16">Browser</th>
+          <th class="width28">Chrome</th>
+          <th class="width28">FireFox</th>
+          <th class="width28">Microsoft Edge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Error Method 1:</th>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit. With autocomplete. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 2:</th>
+          <td>
+            <p class="transcript">Phone number. Edit. Error: Must be a valid phone number. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit. With autocomplete. Error: Must be a valid phone number. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit. Error: Must be a valid phone number. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 3:</th>
+          <td>
+            <p class="transcript">Mobile number. Edit. Invalid entry. Blank</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Edit. Invalid entry. With autocomplete. Blank</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Edit. Invalid entry. Blank</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 1:</th>
+          <td>
+            <p class="transcript">Email. Edit. Add your email address. Blank.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+          <td>
+            <p class="transcript">Email. Edit. With autocomplete. Blank.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Email. Edit. Add your email address. Add your email address.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 2:</th>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit. With autocomplete. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 3:</th>
+          <td>
+            <p class="transcript">Address. Edit. Use your full street address. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit. With autcomplete. Use your full street address. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit. Use your full street address. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 1:</th>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit. Blank</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Clickable. Active customers is the maximum number of active customers in a given month. Button.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit. With autocomplete. Blank</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit. Blank</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 2:</th>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit. With autocomplete. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit. Blank.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>JAWS - Windows</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="width16">Browser</th>
+          <th class="width28">Chrome</th>
+          <th class="width28">FireFox</th>
+          <th class="width28">Microsoft Edge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Error Method 1:</th>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Age. Error: Must be a valid age value. Edit. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 2:</th>
+          <td>
+            <p class="transcript">Phone number. Edit. Use JAWS key plus ALT plus R to read the script of text. Error: Must be a valid phone number. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit. Use JAWS key plus ALT plus R to read the script of text. Error: Must be a valid phone number.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Phone number. Edit. Type in text.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Error Method 3:</th>
+          <td>
+            <p class="transcript">Mobile number. Edit. Invalid entry. Type in text</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Edit. Invalid entry.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Mobile number. Edit. Type in text</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 1:</th>
+          <td>
+            <p class="transcript">Email. Edit. Add your email address. Type in text.</p>
+            <span class="results pass">PASS - NOT RECOMMENDED</span>
+          </td>
+          <td>
+            <p class="transcript">Email. Edit.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+          <td>
+            <p class="transcript">Email. Edit. Type in text.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 2:</th>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Password. Must be at least 8 characters. Edit. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Hint Method 3:</th>
+          <td>
+            <p class="transcript">Address. Edit. Use JAWS key plus ALT plus R to read the script of text. Use your full street address. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit. Use JAWS key plus ALT plus R to read the script of text. Use your full street address.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <p class="transcript">Address. Edit. Type in text.</p>
+            <span class="results fail">FAIL</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 1:</th>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit. Type in text</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Button before input</h4>
+            <p class="transcript">Active customers is the maximum number of active customers in a given month. Button. Read Only.</p>
+            <span class="results pass">PASS</span>
+            <h4 class="margin-top">Input</h4>
+            <p class="transcript">Active customers. Active customers is the maximum number of active customers in a given month. Edit. Type in text</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+        <tr>
+          <th>More detailed hints Method 2:</th>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit. Type in text.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit.</p>
+            <span class="results pass">PASS</span>
+          </td>
+          <td>
+            <h4>Input</h4>
+            <p class="transcript">Favourite vegetable. Edit. Type in text..</p>
+            <span class="results pass">PASS</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+</body>
+</html>

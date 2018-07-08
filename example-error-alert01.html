@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inline error alert method 1: alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Inline error alert method 1: alert</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container--spaced">
+        <label for="example01">
+          <span class="label-content">Name</span>
+          <input class="form-input" id="example01" type="text">
+        </label>
+      </div>
+      <div class="form-container--spaced">
+        <label for="example02">
+          <span class="label-content">Address</span>
+          <input class="form-input form-input--error" id="example02" type="text">
+          <span class="error" role="alert">Error: Must be a valid age value</span>
+        </label>
+      </div>
+      <div class="form-container">
+        <label for="example03">
+          <span class="label-content">Email</span>
+          <input class="form-input" id="example03" type="email">
+        </label>
+      </div>
+    </form>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

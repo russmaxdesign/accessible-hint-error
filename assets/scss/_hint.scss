@@ -1,0 +1,160 @@
+
+table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #efefef;
+}
+
+form {
+  margin: 1em 0;
+  padding: 1em;
+  background: #efefef;
+}
+
+.main {
+  max-width: 36em;
+  margin: 0 auto;
+}
+
+.main-wide {
+  max-width: 56em;
+  margin: 0 auto;
+}
+
+.form-container {
+  clear: both;
+  margin: 0;
+}
+
+.form-container--spaced {
+  clear: both;
+  margin: 0 0 1em;
+}
+
+.form-label {
+  display: block;
+  margin: 0 0 .3em;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: .2em;
+  padding: .5em;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1em;
+}
+
+.form-input--error {
+  border: 1px solid red;
+}
+
+.hint {
+  display: block;
+  margin: .3em 0 0;
+  color: #444;
+  font-size: .9em;
+}
+
+.error {
+  display: block;
+  margin: .3em 0 0;
+  color: red;
+  font-size: .9em;
+}
+
+.label-content {
+  display: block;
+  margin: 0 0 .3em;
+}
+
+.label-content-inline {
+  display: inline-block;
+  margin: 0 0 .3em;
+}
+
+.help {
+  display: inline-block;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/tooltip.png);
+  background-repeat: no-repeat;
+  text-indent: -10000px;
+}
+
+.transcript {
+  margin: 0;
+  font-style: italic;
+}
+
+.results {
+  display: inline-block;
+  border-radius: 10px;
+  margin: .5em 0 0;
+  padding: .2em .5em;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.pass {
+  background: lime;
+}
+
+.fail {
+  background: pink;
+}
+
+.na {
+  background: #ccc;
+}
+
+.width16 {
+  width: 16%;
+}
+
+.width28 {
+  width: 28%;
+}
+
+.margin-top {
+  margin-top: 1em;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+}
+
+.hint-parent {
+  position: relative;
+}
+
+.hint-positioned {
+  position: absolute;
+  top: -5px;
+  left: 9.2em;
+}
+
+.small {
+  font-size: .8em;
+}

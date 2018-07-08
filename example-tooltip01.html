@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tooltip method 1: Additional information before the form control, but inside label</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Tooltip method 1: Additional information before the form control, but inside label</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+    <p>If the additional information is critical and needs to be programatically associated with the form control, it may be best placed inside the label, or associated via an aria-describedby attribute.</p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container">
+        <label for="hint4">
+          <span class="label-content">
+            Active customers
+            <a href="#" class="tooltip" role="button">
+              <span class="tooltip__content">
+                <span class="hidden">is defined as </span>The maximum number of active customers in a given month.
+              </span>
+            </a>
+          </span>
+          <input class="form-input" id="hint4" type="text">
+        </label>
+      </div>
+    </form>
+
+    <h2>Markup</h2>
+    <figure>
+<pre><code class="language-html">&lt;div class="form-container"&gt;
+  &lt;label for="hint4"&gt;
+    &lt;span class="label-content"&gt;
+      Active customers
+      &lt;a href="#" class="tooltip" role="button"&gt;
+        &lt;span class="tooltip__content"&gt;
+          &lt;span class="hidden"&gt;is defined as &lt;/span&gt;The maximum number of active customers across a given month.
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;input class="form-input" id="hint4" type="text"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

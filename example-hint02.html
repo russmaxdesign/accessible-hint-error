@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inline hints method 2: Wrapped label</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Inline hints method 2: Wrapped label</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+    <p>This method wraps the label element around the label content, the form control and the hint.</p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container">
+        <label for="hint2">
+          <span class="label-content">Password</span>
+          <input class="form-input" id="hint2" type="text">
+          <span class="hint">Must be at least 8 characters</span>
+        </label>
+      </div>
+    </form>
+
+    <h2>Markup</h2>
+    <figure>
+<pre><code class="language-html">&lt;div class="form-container"&gt;
+  &lt;label for="hint2"&gt;
+    &lt;span class="label-content"&gt;Password&lt;/span&gt;
+    &lt;input class="form-input" id="hint2" type="text"&gt;
+    &lt;span class="hint"&gt;Must be at least 8 characters&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </figure>
+
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="small" colspan="3" id="05-voiceover">OSX Voiceover</th>
+          <th class="small" colspan="3" id="05-nvda">Windows NVDA</th>
+          <th class="small" colspan="3" id="05-jaws">Windows JAWS</th>
+        </tr>
+        <tr>
+          <th class="small" id="05-voiceover-chrome">Chrome</th>
+          <th class="small" id="05-voiceover-safari">Safari</th>
+          <th class="small" id="05-voiceover-opera">Opera</th>
+          <th class="small" id="05-nvda-chrome">Chrome</th>
+          <th class="small" id="05-nvda-firefox">Firefox</th>
+          <th class="small" id="05-nvda-edge">Edge</th>
+          <th class="small" id="05-jaws-chrome">Chrome</th>
+          <th class="small" id="05-jaws-firefox">Firefox</th>
+          <th class="small" id="05-jaws-edge">Edge</th>
+        </tr>
+      </thead>
+      <tr>
+        <td headers="05-voiceover 05-voiceover-chrome"><span class="results pass">PASS</span></td>
+        <td headers="05-voiceover 05-voiceover-safari"><span class="results pass">PASS</span></td>
+        <td headers="05-voiceover 05-voiceover-opera"><span class="results pass">PASS</span></td>
+        <td headers="05-nvda 05-nvda-chrome"><span class="results pass">PASS</span></td>
+        <td headers="05-nvda 05-nvda-firefox"><span class="results pass">PASS</span></td>
+        <td headers="05-nvda 05-nvda-edge"><span class="results pass">PASS</span></td>
+        <td headers="05-jaws 05-jaws-chrome"><span class="results pass">PASS</span></td>
+        <td headers="05-jaws 05-jaws-firefox"><span class="results pass">PASS</span></td>
+        <td headers="05-jaws 05-jaws-edge"><span class="results pass">PASS</span></td>
+      </tr>
+    </table>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

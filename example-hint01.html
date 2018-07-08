@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inline hints method 2: The placeholder attribute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Inline hints method 2: The <code>placeholder</code> attribute</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+    <p>Some authors use the placeholder to provide hints to users. Even though the placeholder content is often announced along with the form control, <b>this method is not recommended</b>. The hint disappears as soon as users interact with the form control, and the placeholder text is often displayed in a very soft colour.</p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container">
+        <label class="form-label" for="hint1">Email</label>
+        <input class="form-input" id="hint1" type="text" placeholder="Add your email address">
+      </div>
+    </form>
+
+    <h2>Markup</h2>
+    <figure>
+<pre><code class="language-html">&lt;div class="form-container"&gt;
+  &lt;label class="form-label" for="hint1"&gt;Email&lt;/label&gt;
+  &lt;input class="form-input" id="hint1" type="text" placeholder="Add your email address"&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="small" colspan="3" id="04-voiceover">OSX Voiceover</th>
+          <th class="small" colspan="3" id="04-nvda">Windows NVDA</th>
+          <th class="small" colspan="3" id="04-jaws">Windows JAWS</th>
+        </tr>
+        <tr>
+          <th class="small" id="04-voiceover-chrome">Chrome</th>
+          <th class="small" id="04-voiceover-safari">Safari</th>
+          <th class="small" id="04-voiceover-opera">Opera</th>
+          <th class="small" id="04-nvda-chrome">Chrome</th>
+          <th class="small" id="04-nvda-firefox">Firefox</th>
+          <th class="small" id="04-nvda-edge">Edge</th>
+          <th class="small" id="04-jaws-chrome">Chrome</th>
+          <th class="small" id="04-jaws-firefox">Firefox</th>
+          <th class="small" id="04-jaws-edge">Edge</th>
+        </tr>
+      </thead>
+      <tr>
+        <td headers="04-voiceover 04-voiceover-chrome"><span class="results pass">PASS</span></td>
+        <td headers="04-voiceover 04-voiceover-safari"><span class="results pass">PASS</span></td>
+        <td headers="04-voiceover 04-voiceover-opera"><span class="results pass">PASS</span></td>
+        <td headers="04-nvda 04-nvda-chrome"><span class="results pass">PASS</span></td>
+        <td headers="04-nvda 04-nvda-firefox"><span class="results fail">FAIL</span></td>
+        <td headers="04-nvda 04-nvda-edge"><span class="results pass">PASS</span></td>
+        <td headers="04-jaws 04-jaws-chrome"><span class="results pass">PASS</span></td>
+        <td headers="04-jaws 04-jaws-firefox"><span class="results fail">FAIL</span></td>
+        <td headers="04-jaws 04-jaws-edge"><span class="results fail">FAIL</span></td>
+      </tr>
+    </table>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
