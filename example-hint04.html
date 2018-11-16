@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inline hints method 4: The aria-describedby attribute with role for IE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="main">
+    <h1>Inline hints method 4: The <code>aria-describedby</code> attribute with role for IE</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+    <p>In some cases, it is not possible to wrap the label around the form control or hint. The <code>aria-describedby</code> can be used to explicitly associate the hint with the form control using matching <code>aria-describedby</code> and <code>id</code> values.</p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <div class="form-container">
+        <label class="form-label" for="hint3">Address</label>
+        <input class="form-input" id="hint3" type="text" aria-describedby="described2">
+        <span class="hint" id="described2" role="tooltip">Use your full street address</span>
+      </div>
+    </form>
+
+    <h2>Markup</h2>
+    <figure>
+<pre><code class="language-html">&lt;div class="form-container"&gt;
+  &lt;label class="form-label" for="hint3"&gt;Address&lt;/label&gt;
+  &lt;input class="form-input" id="hint3" type="text" aria-describedby="described2"&gt;
+  &lt;span class="hint" id="described2" role="tooltip"&gt;Use your full street address&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="small" colspan="3" id="06-voiceover">OSX Voiceover</th>
+          <th class="small" colspan="3" id="06-nvda">Windows NVDA</th>
+          <th class="small" colspan="3" id="06-jaws">Windows JAWS</th>
+        </tr>
+        <tr>
+          <th class="small" id="06-voiceover-chrome">Chrome</th>
+          <th class="small" id="06-voiceover-safari">Safari</th>
+          <th class="small" id="06-voiceover-opera">Opera</th>
+          <th class="small" id="06-nvda-chrome">Chrome</th>
+          <th class="small" id="06-nvda-firefox">Firefox</th>
+          <th class="small" id="06-nvda-edge">Edge</th>
+          <th class="small" id="06-jaws-chrome">Chrome</th>
+          <th class="small" id="06-jaws-firefox">Firefox</th>
+          <th class="small" id="06-jaws-edge">Edge</th>
+        </tr>
+      </thead>
+      <tr>
+        <td headers="06-voiceover 06-voiceover-chrome"><span class="results pass">PASS</span></td>
+        <td headers="06-voiceover 06-voiceover-safari"><span class="results pass">PASS</span></td>
+        <td headers="06-voiceover 06-voiceover-opera"><span class="results pass">PASS</span></td>
+        <td headers="06-nvda 06-nvda-chrome"><span class="results pass">PASS</span></td>
+        <td headers="06-nvda 06-nvda-firefox"><span class="results pass">PASS</span></td>
+        <td headers="06-nvda 06-nvda-edge"><span class="results pass">PASS</span></td>
+        <td headers="06-jaws 06-jaws-chrome"><span class="results pass">PASS</span></td>
+        <td headers="06-jaws 06-jaws-firefox"><span class="results pass">PASS</span></td>
+        <td headers="06-jaws 06-jaws-edge"><span class="results fail">FAIL</span></td>
+      </tr>
+    </table>
+    <hr>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="results.html">Full results</a> |
+      <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
+    </p>
+
+  </main>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

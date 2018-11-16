@@ -2,37 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Inline error method 3: The aria-errormessage attribute</title>
+  <title>Inline error method 3: The aria-describedby attribute with role for IE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <main class="main">
-    <h1>Inline error method 3: The <code>aria-errormessage</code> attribute</h1>
+    <h1>Inline error method 3: The <code>aria-describedby</code> attribute with role for IE</h1>
     <p>
       <a href="index.html">Home</a> |
       <a href="results.html">Full results</a> |
       <a href="https://github.com/russmaxdesign/accessible-hint-error">Github page</a>
     </p>
-    <p>Inline error messages can be programmatically associated with the form control using a matching <code>aria-errormessage</code> and <code>id</code> values. Authors must use the <code>aria-invalid</code> attribute in conjunction with the <code>aria-errormessage</code> attribute.</p>
-    <p>The <code>aria-errormessage</code> is new to ARIA 1.1 and not yet fully supported. This means that the error message is not programatically associated with the form control.</p>
+    <p>In some cases, it is not possible to wrap the label around the form control or error message. The <code>aria-describedby</code> can be used to explicitly associate the error message with the form control using matching <code>aria-describedby</code> and <code>id</code> values.</p>
 
     <h2>Example</h2>
     <form action="#">
       <div class="form-container">
-        <label class="form-label" for="error3">Mobile number</label>
-        <input class="form-input form-input--error" id="error3" aria-errormessage="msg01" type="text" aria-invalid="true">
-        <span class="error" id="msg01" aria-live="assertive">Error: Must be a valid mobile number</span>
+        <label class="form-label" for="error2">Phone number</label>
+        <input class="form-input form-input--error" id="error2" type="text" aria-describedby="described1">
+        <span class="error" id="described1" role="tooltip">Error: Must be a valid phone number</span>
       </div>
     </form>
 
     <h2>Markup</h2>
     <figure>
 <pre><code class="language-html">&lt;div class="form-container"&gt;
-  &lt;label class="form-label" for="error3"&gt;Mobile number&lt;/label&gt;
-  &lt;input class="form-input form-input--error" id="error3" aria-errormessage="msg01" type="text" aria-invalid="true"&gt;
-  &lt;span class="error" id="msg01" aria-live="assertive"&gt;Error: Must be a valid mobile number&lt;/span&gt;
+  &lt;label class="form-label" for="error2"&gt;Phone number&lt;/label&gt;
+  &lt;input class="form-input form-input--error" id="error2" type="text" aria-describedby="described1"&gt;
+  &lt;span class="error" id="described1" role="tooltip"&gt;Error: Must be a valid phone number&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
     </figure>
@@ -41,32 +40,32 @@
     <table>
       <thead>
         <tr>
-          <th class="small" colspan="3" id="03-voiceover">OSX Voiceover</th>
-          <th class="small" colspan="3" id="03-nvda">Windows NVDA</th>
-          <th class="small" colspan="3" id="03-jaws">Windows JAWS</th>
+          <th class="small" colspan="3" id="02-voiceover">OSX Voiceover</th>
+          <th class="small" colspan="3" id="02-nvda">Windows NVDA</th>
+          <th class="small" colspan="3" id="02-jaws">Windows JAWS</th>
         </tr>
         <tr>
-          <th class="small" id="03-voiceover-chrome">Chrome</th>
-          <th class="small" id="03-voiceover-safari">Safari</th>
-          <th class="small" id="03-voiceover-opera">Opera</th>
-          <th class="small" id="03-nvda-chrome">Chrome</th>
-          <th class="small" id="03-nvda-firefox">Firefox</th>
-          <th class="small" id="03-nvda-edge">Edge</th>
-          <th class="small" id="03-jaws-chrome">Chrome</th>
-          <th class="small" id="03-jaws-firefox">Firefox</th>
-          <th class="small" id="03-jaws-edge">Edge</th>
+          <th class="small" id="02-voiceover-chrome">Chrome</th>
+          <th class="small" id="02-voiceover-safari">Safari</th>
+          <th class="small" id="02-voiceover-opera">Opera</th>
+          <th class="small" id="02-nvda-chrome">Chrome</th>
+          <th class="small" id="02-nvda-firefox">Firefox</th>
+          <th class="small" id="02-nvda-edge">Edge</th>
+          <th class="small" id="02-jaws-chrome">Chrome</th>
+          <th class="small" id="02-jaws-firefox">Firefox</th>
+          <th class="small" id="02-jaws-edge">Edge</th>
         </tr>
       </thead>
       <tr>
-        <td headers="03-voiceover 03-voiceover-chrome"><span class="results fail">FAIL</span></td>
-        <td headers="03-voiceover 03-voiceover-safari"><span class="results fail">FAIL</span></td>
-        <td headers="03-voiceover 03-voiceover-opera"><span class="results fail">FAIL</span></td>
-        <td headers="03-nvda 03-nvda-chrome"><span class="results fail">FAIL</span></td>
-        <td headers="03-nvda 03-nvda-firefox"><span class="results fail">FAIL</span></td>
-        <td headers="03-nvda 03-nvda-edge"><span class="results fail">FAIL</span></td>
-        <td headers="03-jaws 03-jaws-chrome"><span class="results fail">FAIL</span></td>
-        <td headers="03-jaws 03-jaws-firefox"><span class="results fail">FAIL</span></td>
-        <td headers="03-jaws 03-jaws-edge"><span class="results fail">FAIL</span></td>
+        <td headers="02-voiceover 02-voiceover-chrome"><span class="results pass">PASS</span></td>
+        <td headers="02-voiceover 02-voiceover-safari"><span class="results pass">PASS</span></td>
+        <td headers="02-voiceover 02-voiceover-opera"><span class="results pass">PASS</span></td>
+        <td headers="02-nvda 02-nvda-chrome"><span class="results pass">PASS</span></td>
+        <td headers="02-nvda 02-nvda-firefox"><span class="results pass">PASS</span></td>
+        <td headers="02-nvda 02-nvda-edge"><span class="results pass">PASS</span></td>
+        <td headers="02-jaws 02-jaws-chrome"><span class="results pass">PASS</span></td>
+        <td headers="02-jaws 02-jaws-firefox"><span class="results pass">PASS</span></td>
+        <td headers="02-jaws 02-jaws-edge"><span class="results fail">FAIL</span></td>
       </tr>
     </table>
     <hr>
